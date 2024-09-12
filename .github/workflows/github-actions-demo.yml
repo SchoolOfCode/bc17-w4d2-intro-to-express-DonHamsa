@@ -10,9 +10,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: try 
-        uses: sudo rm -rf node_modules
-
       - name: Install dependencies
         run: npm install
         
