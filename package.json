@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "Node index.js",
     "prepare": "husky",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier . --write"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "eslint": "^9.10.0",
     "globals": "^15.9.0",
     "husky": "^9.1.6",
-    "lint": "^0.8.19"
+    "lint": "^0.8.19",
+    "prettier": "3.3.3"
   }
 }
