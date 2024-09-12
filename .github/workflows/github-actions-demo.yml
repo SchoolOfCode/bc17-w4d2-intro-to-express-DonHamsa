@@ -14,7 +14,7 @@ jobs:
         run: npm install
 
       - name: linting
-        run: npx run format 
+        run: npm run format 
     
 
 
