@@ -10,11 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm install
+      - name: create a docker image 
+        run: docker build -t hamsa .
+      
+      - name: run the docker image and lint
+        run: docker run --rm hamsa npm run format 
 
-      - name: linting
-        run: npm run format 
-    
+      - name: Log Success
+        run: echo "Build and tests were successful!"
 
 
